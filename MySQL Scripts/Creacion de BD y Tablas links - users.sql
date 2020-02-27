@@ -44,5 +44,11 @@ ALTER TABLE links
 DESCRIBE users;
 DESCRIBE links;
 
+-- Inserto datos en mi tabla Links.
+INSERT INTO links
+	(title, url, description, user_id, created_at) VALUES
+		('Mixcloud', 'https://www.mixcloud.com/joeeriquelme/', 'Joel Riquelme perfil en Mixcloud', 5, '2020-02-27 18:23:59' ),
+        ('SoundCloud', 'https://soundcloud.com/joelriquelme', 'Joel Riquelme perfil en Soundcloud',	5,	'2020-02-27 18:21:32');
+
 SELECT * FROM users;
 SELECT * FROM links;

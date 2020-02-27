@@ -32,6 +32,7 @@ router.post('/add', isLoggedIn, async (req, res) => {
 router.get('/', isLoggedIn, async (req, res) => {
     const links = await pool.query('SELECT * FROM links WHERE user_id = ?', [req.user.id]);
     res.render('links/list', {links});
+    console.log(links);
 });
 
 // Establezo lo que sucederá cuando el usuario solicite eliminar un Link.
